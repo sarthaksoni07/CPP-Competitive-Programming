@@ -9,7 +9,7 @@ cout.tie(0);
 int x;
 cin>>x;
 while(x--){ // this loop will run until x=0
-
+ cout<<x<<endl;
 }
 return 0;
 }
