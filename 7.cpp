@@ -8,14 +8,11 @@ cout.tie(0);
  
 int days;
 cin>>days;
-
-int months = days/30;
-int years = months/12;
-
-int leftYears = years%1;
-int leftMonths = months%12;
-int left = days%30;
-cout<<"age of the person is-"<<leftYears<<':'<<leftMonths<<':'<<left;
+int years = days/365;
+int left = days&365;
+int month = left/30;
+int day=left%30;
+cout<<"age of the person is-"<<years<<':'<<month<<':'<<day;
 
 return 0;
 } 
