@@ -1,0 +1,4 @@
+*.exe
+outputs
+.vscode
+a.cpp
