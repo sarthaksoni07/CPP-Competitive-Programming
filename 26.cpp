@@ -62,6 +62,8 @@ void solve()
             index++;
         }
     }
+
+    cout<<score;
 }
 int main()
 {
