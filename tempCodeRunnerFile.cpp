@@ -1,43 +1,38 @@
-
 void solve()
 {
     int n, m;
     cin >> n >> m;
-    int arr[n][m];
+    char a[n][m];
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
         {
-            cin >> arr[i][j];
+            cin >> a[i][j];
         }
     }
-
-    int f;
-    int flag = 0;
-    cin >> f;
-    for (int i = 0; i < n; i++)
+    int f, g, flag = 0;
+    cin >> f >> g;
+    char s = a[f][g];
+    for (int i = f - 1; i <= f + 1; i++)
     {
-        for (int j = 0; j < m; j++)
+        for (int j = g - 1; j <= g + 1; j++)
         {
-            if (flag != 0)
+            while (i != f && j != g)
             {
-                return;
-            }
-            else if (flag == 0)
-            {
-                if (arr[i][j] == f)
+                if (a[i][j] == s)
                 {
                     flag++;
                 }
             }
         }
     }
-    if (flag == 1)
+
+    if (flag > 0)
     {
-        cout << "will not take number" << endl;
+        cout << "no" << endl;
     }
-    else if (flag == 0)
+    else
     {
-        cout << "will take number" << endl;
+        cout << "yes" << endl;
     }
 }
