@@ -1,5 +1,5 @@
 *.exe
-stl\ learning/*.txt
+*.txt
 outputs
 .vscode
 a.cpp
