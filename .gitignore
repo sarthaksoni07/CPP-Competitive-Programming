@@ -1,4 +1,6 @@
 *.exe
+stl\ learning/*.txt
 outputs
 .vscode
 a.cpp
+git a
