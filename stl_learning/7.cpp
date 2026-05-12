@@ -35,6 +35,10 @@ int main()
     {
         cout << value2.first << "\t" << value2.second;
     }
+    for (auto value2 : v2)
+    {
+        cout << value2.first << "\t" << value2.second;
+    }
     for (auto it2 = v2.begin(); it2 < v2.end(); it2++)
     {
         cout << (*it2).first << (*it2).second;
