@@ -1,25 +1,26 @@
 #include <bits/stdc++.h>
+using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    bool isAnagram(string s, string t) {
+    bool isAnagram(string s, string t)
+    {
+        if (s.size() != t.size())
+        {
+            return false;
+        }
         sort(s.begin(), s.end());
         sort(t.begin(), t.end());
-        int sizes = s.size();
-        int sizet = t.size();
-        if(sizes!=sizet){
-            return false;
-        }
+        int size = min(s.size(), t.size());
         int flag = 0;
-        for (int i = 0; i < sizes; i++) {
-            if (s[i] != t[i]) {
-                flag++;
+        for (int i = 0; i < size; i++)
+        {
+            if (s[i] != t[i])
+            {
+                return false;
             }
         }
-        if (flag != 0) {
-            return false;
-        } else {
-            return true;
-        }
+        return true;
     }
 };
