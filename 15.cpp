@@ -18,12 +18,12 @@ int main()
     cin.tie(0);
     cout.tie(0);
 
- int i,j,r=5,c=9;
+ int i,j,r=5,c=50;
     for (i = 0; i < r; i++)
     {
         for (j = 0; j < c; j++)
         {
-            cout << star(i, j, r, c);
+            cout << star(i, j%8, r, c);
         }
         cout<<'\n';
     }
