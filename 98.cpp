@@ -19,7 +19,6 @@ void solve()
         cin >> c;
         s += c;
     }
-    int size = n * m;
     int iteration = 0;
     while (iteration <= 6)
     {
